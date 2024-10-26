@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <title>Tommaso Giorgio Bianco</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                Tommaso Giorgio Bianco
+            </div>
+            <div>
+                <a class="links" href="#home"> Home </a>&nbsp;&nbsp;
+                <a class="links" href="#about"> About </a>&nbsp;&nbsp;
+                <a class="links" href="#skils"> Skills </a>&nbsp;&nbsp;
+                <a class="links" href="#contact"> Contact </a>
+            </div>
+        </header>
+        <section id="home" class="home">
+            <div class="text-content">
+                <p>Hi,</p>
+                <p>I'm <a href="#about" class="Tommaso">Tommaso</a></p>
+                <p>Web Designer</p>
+            </div>
+            <img src="persona.jpg" alt="Foto di Tommaso">
+        </section>
+        <section id="about" class="about">
+            <div>
+                <br>
+                <p>Talking About Me</p>
+                <div class="about-text">
+                    I'm a former developer currently studying Computer Science at the University of Milan. With experience as a tutor and volunteer, 
+                    I’ve developed strong communication skills and a passion for helping others learn. I have a background in programming languages like C, Go, HTML, CSS,
+                    and Jupyter, which I enjoy applying in practical projects. If you're looking for a website or a digital solution, feel free to contact me, and I'll find
+                    a solution that fits your needs.
+                </div>
+            </div>
+            Some Projects
+            <button class="bottone"> <a href="https://671a37b57822c7ee0c48f6fa--pizzeriaprova.netlify.app/#menu" style="text-decoration: none; color: black;" target="_blank">HTML/CSS</a> </button>
+            <button class="bottone"> <a href="https://github.com/Blanco05/2048/blob/main/2048.go" style="text-decoration: none; color: black;" target="_blank"> GO </a> </button>
+            <button class="bottone"> <a href="https://github.com/Blanco05/Programs-C/blob/main/Calculation%20of%20the%20definite%20integral.c" style="text-decoration: none; color: black;" target="_blank"> C </a> </button>
+        </section>
+        <section id="skils" class="skils">
+            <div>
+                <br>
+                <p>Some ScreenShot of my Codes</p>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px;">
+                    <div>
+                        <p style="font-size: 25px;">A part of 2048 game in GO</p>
+                        <div class="grey_square">
+                            <div class="red_dot"></div>&nbsp
+                            <div class="yellow_dot"></div>&nbsp
+                            <div class="green_dot"></div>
+                        </div>
+                        <div class="black_square">
+                            <pre style="line-height: 23px;"><br>
+                                1   func s(mat [][]int) {
+                                2      clearTerminal()
+                                3      for j := 0; j < 4; j++ {
+                                4          for i := 2; i >= 0; i-- {
+                                5             if mat[i][j] != 0 {
+                                6             for k := i; k < 3 && mat[k+1][j] == 0; k++ {
+                                7                  mat[k+1][j] = mat[k][j]
+                                8                   mat[k][j] = 0
+                                9                }
+                                10               if i < 3 && mat[i+1][j] == mat[i][j] {
+                                11                   mat[i+1][j] += mat[i][j]
+                                12                   mat[i][j] = 0
+                                13               }
+                                14           }
+                                15       }
+                                16    }
+                                17    printMatrix(mat)
+                                18    }
+                            </pre>
+                        </div>
+                    </div>
+                    &nbsp&nbsp&nbsp
+                    <div>
+                        <p class="typewriter-text" style="font-size: 25px;">A part of Integral Calculation In C</p>
+                        <div class="grey_square">
+                            <div class="red_dot"></div>&nbsp
+                            <div class="yellow_dot"></div>&nbsp
+                            <div class="green_dot"></div>
+                        </div>
+                        <div class="black_square2">
+                            <pre id="code-text" style="line-height: 23px;"><br>
+                                1    for (i = first + E; i <= second; i += (2 * E)) {
+                                2        switch (choice) {
+                                3            case 1:
+                                4                f = A * (i * i) + B * i + C;
+                                5                break;
+                                6            case 2:
+                                7                if (A * (i * i) + B * i + C == 0) {
+                                8                    printf("Error: Division by zero in hyperbolic function at x = %.6f\n", i);
+                                9                    return -1;
+                                10               }
+                                11               f = 1 / (A * (i * i) + B * i + C);
+                                12               break;
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </section>
+        <section id="contact" class="contact">
+            <br><br>
+            <div>
+                My contacts
+            </div>
+            <br>
+            <div style="display: flex; align-items: center; font-size: 30px;">
+                <img src="icons8-mail-50.png"> &nbsp&nbsp<a href="mailto:tommasogiorgio.bianco@gmail.com?" target="_blank" style="text-decoration: none; color: black;" target="_blank">tommasogiorgio.bianco@gmail.com</a>
+            </div>
+            <div style="display: flex; align-items: center; font-size: 30px;">
+                <img src="icons8-github-50.png"> &nbsp&nbsp<a href="https://github.com/Blanco05" style="text-decoration: none; color: black;" target="_blank">Blanco05 </a>
+            </div>
+            <div style="display: flex; align-items: center; font-size: 30px;">
+                <img src="icons8-discord-50.png"> &nbsp&nbsp<a href="https://discord.gg/t5pFHWZH" style="text-decoration: none; color: black;" target="_blank">Blanco05 </a>
+            </div>
+            <div style="display: flex; align-items: center; font-size: 30px;">
+                <img src="icons8-youtube-50.png"> &nbsp&nbsp<a href="https://www.youtube.com/@Cultura_Antica" style="text-decoration: none; color: black;" target="_blank">Cultura Antica</a>
+            </div>
+            <div style="display: flex; align-items: center; font-size: 30px;">
+                <img src="icons8-instagram-50.png"> &nbsp&nbsp<a href="https://www.instagram.com/_mask.4.you_/" style="text-decoration: none; color: black;" target="_blank">_mask.4.you_</a>
+            </div>
+            <div style="display: flex; align-items: center; font-size: 30px;">
+                <img src="icons8-tiktok-50.png"> &nbsp&nbsp<a href="https://www.tiktok.com/@cultura_antica" style="text-decoration: none; color: black;" target="_blank">Cultura Antica</a>
+            </div>
+        </section>
+    </body> 
+</html>
